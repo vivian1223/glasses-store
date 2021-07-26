@@ -57,6 +57,10 @@
   .d-md-none {
     display: none;
   }
+  //justify-content
+  .justify-content-md-evenly {
+    justify-content: space-evenly;
+  }
 }
 
 @include mobile {

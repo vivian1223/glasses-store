@@ -36,7 +36,7 @@
                     </li>
                     <li
                         class="ms-lg-6 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s">
-                        <a class=" d-md-block text-white" href="#">門市據點</a>
+                        <a class=" d-md-block text-white" href="#" @click.prevent="showStore">門市據點</a>
                     </li>
                     <li
                         class="ms-lg-6 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s border-sm-right-white">
@@ -66,8 +66,8 @@
 
                     <h2 class=" text-primary fs-lg-5 fs-md-3 fs-sm-3 font-bold text-center">用專業的心，做專業的事</h2>
 
-                    <ul class="d-flex flex-md-wrap justify-content-lg-center mt-lg-5">
-                        <li class="ms-lg-1 me-lg-1 ms-md-l me-md-l  mb-md-6 col-lg-3 col-md-6  d-flex flex-column ">
+                    <ul class="d-flex flex-md-wrap justify-content-lg-evenly justify-content-md-evenly mt-lg-5">
+                        <li class="mb-md-6 col-lg-3 col-md-6  d-flex flex-column ">
                             <div class="h-lg-s d-flex  align-items-lg-center justify-content-lg-center">
                                 <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-dollar.svg"
                                     alt="icon-dollar">
@@ -78,7 +78,7 @@
                             </p>
                         </li>
                         <li
-                            class="ms-lg-1 me-lg-1 ms-md-l me-md-l  mb-md-6 col-lg-3 col-md-6 col-sm d-flex flex-column">
+                            class=" mb-md-6 col-lg-3 col-md-6 col-sm d-flex flex-column">
                             <div class="h-lg-s d-flex align-items-lg-center justify-content-lg-center">
                                 <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-clock.svg"
                                     alt="icon-clock">
@@ -90,7 +90,7 @@
                             </p>
                         </li>
                         <li
-                            class="ms-lg-1 me-lg-1 ms-md-l me-md-l  mb-md-6 col-lg-3 col-md-6 col-sm  d-flex flex-column">
+                            class=" mb-md-6 col-lg-3 col-md-6 col-sm  d-flex flex-column">
                             <div class="h-lg-s d-flex  align-items-lg-center justify-content-lg-center">
                                 <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-heart.svg"
                                     alt="icon-heart">
@@ -102,7 +102,7 @@
                             </p>
                         </li>
                         <li
-                            class="ms-lg-1 me-lg-1 ms-md-l me-md-l mb-md-6 col-lg-3 col-md-6 col-sm  d-flex flex-column">
+                            class="mb-md-6 col-lg-3 col-md-6 col-sm  d-flex flex-column">
                             <div class="h-lg-s d-flex  align-items-lg-center justify-content-lg-center">
                                 <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-glasses.svg"
                                     alt="icon-glasses">
@@ -198,9 +198,9 @@
             <div class="container pt-lg-l pb-lg-l pt-md-m pb-md-m pt-sm-l pb-sm-l">
                 <h2 class=" text-primary fs-lg-5 fs-md-3 fs-sm-3 font-bold text-center">顧客推薦</h2>
 
-                <ul class="d-flex flex-md-wrap justify-content-lg-center mt-lg-5">
+                <ul class="d-flex flex-md-wrap justify-content-lg-between  justify-content-md-evenly mt-lg-5">
                     <li
-                        class="ms-lg-1 me-lg-1 ms-md-s me-md-s mb-md-m col-lg-3 col-md-6  col-sm d-flex flex-column card-recomendation">
+                        class="mb-md-m col-lg-3 col-md-6  col-sm d-flex flex-column card-recomendation">
 
                         <img class="coustomer-recommendation border-radius-lg-top"
                             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-1.png"
@@ -214,7 +214,7 @@
                         </div>
                     </li>
                     <li
-                        class="ms-lg-1 me-lg-1 ms-md-s me-md-s mb-md-m col-lg-3 col-md-6  col-sm d-flex flex-column card-recomendation">
+                        class="mb-md-m col-lg-3 col-md-6  col-sm d-flex flex-column card-recomendation">
 
                         <img class="coustomer-recommendation border-radius-lg-top"
                             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-2.png"
@@ -228,7 +228,7 @@
                         </div>
                     </li>
                     <li
-                        class="ms-lg-1 me-lg-1 ms-md-s me-md-s mb-md-m col-lg-3 col-md-6  col-sm d-flex flex-column card-recomendation">
+                        class="mb-md-m col-lg-3 col-md-6  col-sm d-flex flex-column card-recomendation">
 
                         <img class="coustomer-recommendation border-radius-lg-top"
                             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-3.png"
@@ -242,7 +242,7 @@
                         </div>
                     </li>
                     <li
-                        class="ms-lg-1 me-lg-1 ms-md-s me-md-s mb-md-m col-lg-3 col-md-6 col-sm d-flex flex-column card-recomendation">
+                        class="mb-md-m col-lg-3 col-md-6 col-sm d-flex flex-column card-recomendation">
 
                         <img class="coustomer-recommendation border-radius-lg-top"
                             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-4.png"
@@ -439,6 +439,37 @@
         </div>
         <!-- 系列眼鏡：Sunglasses結束 -->
         <!-- 門市據點開始 -->
+        <div v-if="store" class="container pt-lg-l pb-lg-l">
+            <h1 class="fs-lg-5 fs-md-3 list-square-lg-secondary mb-lg-6">
+                門市據點
+            </h1>
+            <div class="d-flex">
+                 <label class="fs-lg-3" for="location">選擇地區</label>
+            <select name="location" id="location" class="ms-lg-1 col-lg-4 ">
+                <option value="" selected disabled>請選擇</option>
+                <template v-for="location in storeList">
+                    <option>
+                        {{location.city}}
+                    </option>
+                </template>
+            </select>
+            </div>
+            <ul class="mt-lg-3 d-flex flex-lg-wrap justify-content-lg-between justify-content-md-evenly">
+                <li v-for="store in storeList"  class="col-lg-4 col-md-6 col-sm mb-lg-2">
+                    <div>
+                        <img :src="store.imageUrl" alt="">
+                        <h2 class="p-lg-s border-info fs-lg-3 fs-md-1">{{store.name}}</h2>
+                    </div>
+                    <ul class=" p-lg-s  fs-lg-2 fs-md-1 border-info ">
+                        <li><i class="fas fa-phone-alt"></i>  電話：{{store.tel}}</li>
+                        <li><i class="far fa-clock">  營業時間：{{store.businessHours}}</i></li>
+                        <li><i class="fas fa-map-marker-alt"></i>  地址：{{store.address}}</li>
+                    </ul>
+                    <a href="#" class="btn-lg-store text-center">詳細資訊</a>
+                </li>
+            </ul>
+
+        </div>
         <!-- 門市據點結束 -->
         <!-- 部落格開始 -->
         <!-- 部落格結束 -->
@@ -460,7 +491,7 @@
                         </li>
                         <li
                             class="ms-lg-5 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s border-sm-right-white">
-                            <a class=" d-md-block text-white" href="#">門市據點</a>
+                            <a class=" d-md-block text-white" href="#" @click.prevent="showStore">門市據點</a>
                         </li>
                         <li
                             class="ms-lg-5 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s">

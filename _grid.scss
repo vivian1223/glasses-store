@@ -3,7 +3,7 @@
     width: 22%;
 }
 .col-lg-4{
-    width: 33.333%;
+    width: 31.3333%;
 }
 .col-lg-6{
     width: 50%;
@@ -20,7 +20,7 @@
 
 @include tablet{
     .col-md-6{
-        width: 35%;
+        width: 48%;
      }
      .col-md-7{
          max-width: 58%;

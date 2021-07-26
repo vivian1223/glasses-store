@@ -42,6 +42,12 @@
     background-image: url();
 }
 
+@include tablet{
+    .cross-over-bg1,.cross-over-bg2{
+        height: 278px;
+    }
+}
+
 @include mobile{
         //background
         .bg-info{
