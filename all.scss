@@ -1,0 +1,604 @@
+@import 'reset';
+
+//variable
+
+$spacer: 20px;
+
+//容器
+.container{
+max-width: 1200px;
+margin:0 auto ;
+}
+//font-style
+.roboto-black-italic{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+//display
+.d-center{
+    margin: 0 auto;
+}
+.d-lg-block{
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+}
+.d-lg-none{
+    display: none;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row-reverse {
+flex-direction: row-reverse;
+}
+.flex-lg-wrap{
+    flex-wrap: wrap;
+}
+//justify-content
+.justify-content-lg-center{
+    justify-content: center;
+}
+
+.justify-content-lg-between{
+    justify-content: space-between;
+}
+.justify-content-end{
+    justify-content: end;
+}
+.justify-content-lg-evenly{
+    justify-content: space-evenly;
+}
+.align-items-lg-center{
+    align-items: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+//padding
+.p-lg-s{
+    padding:$spacer *0.75 ;
+}
+.pt-lg-s{
+    padding-top: $spacer *1.5;
+}
+.ps-lg-s{
+    padding-left: $spacer *1.5;
+}
+.pe-lg-s{
+    padding-right: $spacer *1.5;
+}
+.pb-lg-s{
+    padding-bottom: $spacer *1.5;
+}
+.ps-lg-m{
+    padding-left: $spacer *3 ;
+}
+.ps-lg-l{
+padding-left: $spacer * 3;
+}
+.pe-lg-l{
+    padding-right: $spacer * 3;
+}
+.pt-lg-l{
+    padding-top: $spacer * 3;
+}
+.pb-lg-l{
+    padding-bottom: $spacer * 3;
+}
+//margin
+.-mt-lg-1{
+    margin-top: $spacer * 0.4;
+}
+.mt-lg-1{
+margin-top: $spacer * 0.8;
+}
+.ms-lg-1{
+    margin-left: $spacer * 0.8;
+    }
+.mt-lg-2{
+    margin-top: $spacer * 1.25;
+}
+.mb-lg-2{
+    margin-bottom: $spacer * 1.25;
+}
+.ms-lg-2{
+    margin-left: $spacer * 1.25;
+}
+.me-lg-2{
+    margin-right: $spacer * 1.25;
+}
+.mt-lg-3{
+    margin-top: $spacer * 1.6;
+}
+.mt-lg-4{
+    margin-top: $spacer * 1.8;
+}
+.mt-lg-5{
+    margin-top: $spacer * 2;
+}
+.mb-lg-5{
+    margin-bottom: $spacer * 2;
+}
+.ms-lg-5{
+    margin-left: $spacer * 2;
+}
+.mt-lg-6{
+    margin-top: $spacer * 2.6;    
+}
+.mb-lg-6{
+    margin-bottom: $spacer * 2.6;    
+}
+.ms-lg-6{
+    margin-left: $spacer * 2.6;    
+}
+.ms-lg-1{
+    margin-left: $spacer * 0.75;
+}
+.me-lg-1{
+    margin-right: $spacer * 0.75;
+}
+.me-lg-2{
+    margin-right: $spacer * 1.25;
+}
+
+// 字體顏色設定
+
+.text-primary{
+    color: #650300;
+}
+.text-secondary{
+    color: #AA0601;
+}
+.text-info{
+    color: #707070;
+}
+.text-white{
+    color: white;
+}
+.text-black{
+    color: #000;
+}
+
+//背景顏色設定
+
+.bg-primary{
+    background-color: #AA0601;
+}
+
+.bg-secondary{
+    background-color: #FAF2F2;
+}
+.bg-info{
+    background-color: #FBF2F2;
+}
+//背景圖片結構
+.banner,.cross-over-bg1,.cross-over-bg2{
+    background-position: center;
+    background-size: cover;
+}
+.banner{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png');
+    height: 525px;
+    padding-right: 10%;
+
+}
+.cross-over{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png');
+}
+.cross-over-bg1,.cross-over-bg2{
+    height: 455px;
+}
+.cross-over-bg1{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png');
+    margin-right: 15px;
+}
+.cross-over-bg2{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png');
+    margin-left: 15px;
+}
+.optical-banner-lg{
+    background-image: url();
+}
+//一般圖片設置
+.coustomer-recommendation{
+    object-fit: cover;
+}
+//卡片設定
+.card-recomendation{
+    border: 1px #DEE2E6 solid;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px 1px #DEE2E6;
+}
+//boder-bottem
+.border-bottom-lg-white{
+    border-bottom: 1px solid #fff;
+}
+//border-radious
+
+.border-radius-lg-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+//字體設定
+$font-spacer:4px;
+.fs-lg-1{
+    font-size: $font-spacer * 3.5;
+}
+.fs-lg-2{
+    font-size: $font-spacer * 5;
+}
+.fs-lg-3{
+    font-size: $font-spacer * 6;
+}
+.fs-lg-4{
+    font-size: $font-spacer * 9;
+}
+.fs-lg-5{
+    font-size: $font-spacer * 12;
+}
+.fs-lg-6{
+    font-size: $font-spacer * 16;
+}
+.fs-lg-7{
+    font-size: $font-spacer * 18;
+}
+//font-weight
+.font-bold{
+    font-weight: bold;
+}
+.font-medium{
+    font-weight: 500;
+}
+//hover
+.list-hover-lg-secondary{
+    border-bottom: 8px solid  transparent;
+}
+.list-hover-lg-secondary:hover{
+    border-bottom: 8px solid  #AA0601;
+}
+
+//height
+.h-lg-1{
+    height: 24px;
+}
+.h-lg-2{
+height: 40px;
+}
+
+.h-lg-s{
+    height: 100px;
+}
+.h-lg-m{
+    height: 125px;
+}
+//image setting
+.object-fit-cover{
+    object-fit: cover;
+}
+
+//gird
+.col-lg-3{
+    width: 22%;
+}
+.col-lg-4{
+    width: 33.333%;
+}
+.col-lg-6{
+    width: 50%;
+}
+.col-lg-7{
+    width: 58%;
+}
+.col-lg-8{
+    width: 66%;
+}
+.col-lg-12{
+    width: 100%;
+}
+//btn
+.btn-lg-form{
+    color: white;
+    margin: 16px auto;
+    display: block;
+    background-color: #AA0601;
+    padding-top: $spacer * 0.8;
+    padding-bottom: $spacer * 0.8;
+    border: 1px transparent solid;
+}
+.btn-lg-change-page{
+    padding: $spacer * 0.5;
+    border: 1px solid #000;
+    margin-left: -1px;
+    color: #000;
+}
+.btn-lg-change-page:hover{
+    background-color: #000;
+    color: #fff;
+}
+//cursor
+.cursor-pointer{
+    cursor: pointer;
+}
+//color-selector
+.color-selector-dark,.color-selector-light{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+}
+.color-selector-dark{
+    background-color: #5F3E2D;
+}
+.color-selector-light{
+    background-color: #B75929;
+}
+
+//RWD tablet
+@media(max-width:767px){
+    //flex wrap
+    .flex-md-wrap{
+        flex-wrap: wrap;
+    }
+    //grid
+    .col-md-6{
+       width: 35%;
+    }
+    .col-md-7{
+        max-width: 58%;
+    }
+    .col-md-5{
+        max-width: 42%;
+    }
+    //padding
+    .pt-md-s{
+        padding-top: $spacer *1.5;
+    }
+    .pt-md-m{
+        padding-top: $spacer *2 ;
+    }
+    .pb-md-m{
+        padding-bottom: $spacer *2 ;
+    }
+    .pb-md-s{
+        padding-bottom: $spacer *1.5;
+    }
+    .p-md-s{
+        padding-left: $spacer *1.5;
+    }
+    .pe-md-s{
+        padding-right: $spacer *1;
+    }
+    .ps-md-s{
+        padding-left: $spacer *1;
+    }
+    .ps-md-m{
+        padding-left: $spacer * 2;
+    }
+    .pe-md-m{
+        padding-right: $spacer * 2;
+    }
+    //margin
+    .ms-md-s{
+        margin-left: $spacer *1;
+    }
+    .me-md-s{
+        margin-right: $spacer *1;
+    }
+    .mb-md-m{
+        margin-bottom: $spacer *1.5;
+    }
+    .ms-md-l{
+        margin-left: $spacer *2.5;
+    }
+    .me-md-l{
+        margin-right: $spacer *2.5;
+    }
+    .mb-md-6{
+        margin-bottom: $spacer * 2.6;    
+    }
+    //dispaly
+    .d-md-block{
+        display: block;
+    }
+    .d-md-none{
+        display: none;
+    }
+    //font-size
+    .fs-md-1{
+        font-size: $font-spacer * 3.5;
+    }
+    .fs-md-5{
+        font-size: $font-spacer * 12;
+    }
+    .fs-md-4{
+        font-size: $font-spacer * 8;
+    }
+    .fs-md-3{
+        font-size: $font-spacer * 6;
+    }
+    .fs-md-2{
+        font-size: $font-spacer * 5;
+    }
+    //btn
+    .btn-md-form{
+        padding-top: $spacer * 0.5;
+        padding-bottom: $spacer * 0.5;
+    }
+    
+    //height
+    .h-md-1{
+        height: 24px;
+    }
+}
+//rwd mobile
+@media(max-width:415px){
+    //padding
+    .p-sm-none{
+        padding: 0;
+    }
+    .ps-sm-none{
+        padding-left: 0;
+    }
+    .pe-sm-none{
+        padding-right: 0;
+    }
+    .pt-sm-s{
+        padding-top: $spacer*0.5;
+    }
+    .pb-sm-s{
+        padding-bottom: $spacer*0.5;
+    }
+    .ps-sm-s{
+        padding-left: $spacer*0.5;
+    }
+    .pe-sm-s{
+        padding-right: $spacer*0.5;
+    }
+    .p-sm-s{
+        padding: $spacer*0.5;
+    }
+    
+    .pt-sm-m{
+        padding-top: $spacer;
+    }
+    .pt-sm-l{
+        padding-top: $spacer*1.5;
+    }
+    .pb-sm-l{
+        padding-bottom: $spacer*1.5;
+    }
+    
+    //margin
+    .mb-sm-s{
+        margin-bottom: $spacer * 0.5;
+    }
+    .mt-sm-s{
+        margin-top: $spacer * 0.5;
+    }
+    
+    .ms-sm-s{
+        margin-left: $spacer * 1;
+    }
+    .ms-sm-none{
+        margin-left: 0;
+    }
+    //display
+    
+    .d-sm-flex{
+        display: flex;
+    }
+    .d-sm-none{
+        display: none;
+    }
+    .d-sm-block{
+        display: block;
+    }
+    
+    .col-sm{
+        width: 100%;
+    }
+    //justify-content
+    .justify-content-sm-center{
+        justify-content: center;
+    }
+    .justify-content-sm-between{
+        justify-content: space-between;
+    }
+    //align-items
+    .align-items-sm-center{
+        align-items: center;
+    }
+    .ps-sm-none{
+        padding-left: 0;
+    }
+    .col-sm-6{
+        width: 50%;
+    }
+    .col-sm{
+        width: 100%;
+    }
+    .flex-sm-wrap{
+        flex-wrap: wrap;
+    }
+    //width
+    .w-sm-s{
+        width: 35px;
+    }
+    .w-sm-m{
+        width: 15%;
+    }
+    //height
+    .h-sm-1{
+        height: 14px;
+    }
+    .h-sm-2{
+        height: 35px;
+    }
+    .border-sm-bottom-white{
+        border-bottom: 1px solid #fff;
+    }
+    .border-sm-right-white{
+        border-right: 1px solid #fff;
+    }
+    //font
+
+    .fs-sm-1{
+        font-size: $font-spacer * 3.5;
+    }
+    .fs-sm-2{
+        font-size: $font-spacer * 5;
+    }
+    .fs-sm-3{
+        font-size: $font-spacer * 6;
+    }
+    .fs-sm-4{
+        font-size: $font-spacer * 7;
+    }
+    .fs-sm-5{
+        font-size: $font-spacer * 8;
+    }
+    //text-align
+    .text-sm-center{
+        text-align: center;
+    }
+    //background
+    .bg-info{
+        background-color: #AA06010D;
+    }
+    .banner{
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png');
+        height: 394px;
+        padding-right: 10%;
+    }
+    .classical-bg1,.classical-bg2,.classical-bg3{        
+        background-size: cover;
+        background-position: center;
+        height: 135px;
+    }
+    .classical-bg1{
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-1.png');
+    }
+    .classical-bg2{
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-2.png');
+    }
+    .classical-bg3{
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-3.png');
+    }
+    .cross-over-bg1,.cross-over-bg2{
+        width: 98%;
+        height: 278px;
+        margin: 5px 0;
+    }
+    //btn
+    .btn-md-form{
+        padding-top: $spacer * 0.4;
+        padding-bottom: $spacer * 0.4;
+    }
+
+}

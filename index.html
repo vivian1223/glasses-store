@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="bg-primary">
+            <nav
+                class=" ps-lg-l pe-lg-l pt-lg-s pb-lg-s ps-md-m pe-md-m pt-md-s pb-md-s p-sm-none d-flex justify-content-lg-between align-items-md-center justify-content-center flex-sm-wrap border-sm-bottom-white">
+                <a href="#" @click="showIndex"
+                    class="col-sm d-sm-flex d-md-block justify-content-sm-center border-sm-bottom-white  pt-sm-s pb-sm-s">
+                    <img class="w-sm-m"
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png"
+                        alt="logo">
+                </a>
+                <ul class="d-flex flex-sm-wrap col-sm align-items-lg-center">
+                    <li
+                        class="ms-lg-6 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s border-sm-right-white">
+                        <a href="#" class=" d-md-block text-white" @click.prevent="showOptical">系列鏡框</a>
+                    </li>
+                    <li
+                        class="ms-lg-6 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s">
+                        <a class=" d-md-block text-white" href="#">門市據點</a>
+                    </li>
+                    <li
+                        class="ms-lg-6 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s border-sm-right-white">
+                        <a class=" d-md-block text-white" href="#">部落格</a>
+                    </li>
+                    <li
+                        class="ms-lg-6 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s">
+                        <a class=" d-md-block text-white" href="#">常見問題</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- 首頁開始 -->
+        <div id="index" v-if="index">
+            <div class="banner d-flex  flex-row-reverse align-items-lg-center">
+                <h1 class="d-flex flex-column text-right text-primary ">
+                    <span class="fs-lg-4 fs-md-2 fs-sm-1">
+                        Promise-Desert 2020 早春系列
+                    </span>
+                    <span class="fs-lg-6 fs-md-5 fs-sm-5 font-bold">
+                        看得清，才能看得遠
+                    </span>
+                </h1>
+            </div>
+            <div class="bg-secondary">
+                <div class="container pt-lg-l pb-lg-l pt-md-m pb-md-m pt-sm-l pb-sm-l">
+
+                    <h2 class=" text-primary fs-lg-5 fs-md-3 fs-sm-3 font-bold text-center">用專業的心，做專業的事</h2>
+
+                    <ul class="d-flex flex-md-wrap justify-content-lg-center mt-lg-5">
+                        <li class="ms-lg-1 me-lg-1 ms-md-l me-md-l  mb-md-6 col-lg-3 col-md-6  d-flex flex-column ">
+                            <div class="h-lg-s d-flex  align-items-lg-center justify-content-lg-center">
+                                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-dollar.svg"
+                                    alt="icon-dollar">
+                            </div>
+                            <h3 class="text-center mt-lg-2 fs-lg-3 text-primary font-bold">單一價格</h3>
+                            <p class="-mt-lg-1">
+                                無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。
+                            </p>
+                        </li>
+                        <li
+                            class="ms-lg-1 me-lg-1 ms-md-l me-md-l  mb-md-6 col-lg-3 col-md-6 col-sm d-flex flex-column">
+                            <div class="h-lg-s d-flex align-items-lg-center justify-content-lg-center">
+                                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-clock.svg"
+                                    alt="icon-clock">
+                            </div>
+
+                            <h3 class="text-center mt-lg-2 fs-lg-3 text-primary font-bold">20 分鐘即可取件</h3>
+                            <p class="-mt-lg-1">
+                                為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。
+                            </p>
+                        </li>
+                        <li
+                            class="ms-lg-1 me-lg-1 ms-md-l me-md-l  mb-md-6 col-lg-3 col-md-6 col-sm  d-flex flex-column">
+                            <div class="h-lg-s d-flex  align-items-lg-center justify-content-lg-center">
+                                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-heart.svg"
+                                    alt="icon-heart">
+                            </div>
+
+                            <h3 class="text-center mt-lg-2 fs-lg-3 text-primary font-bold">安心售後服務</h3>
+                            <p class="-mt-lg-1">
+                                我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+                            </p>
+                        </li>
+                        <li
+                            class="ms-lg-1 me-lg-1 ms-md-l me-md-l mb-md-6 col-lg-3 col-md-6 col-sm  d-flex flex-column">
+                            <div class="h-lg-s d-flex  align-items-lg-center justify-content-lg-center">
+                                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-glasses.svg"
+                                    alt="icon-glasses">
+                            </div>
+
+                            <h3 class="text-center mt-lg-2 fs-lg-3 text-primary font-bold">關於鏡片</h3>
+                            <p class="-mt-lg-1">
+                                使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container pt-lg-l pb-lg-l">
+                <h2 class=" text-primary fs-lg-5 fs-md-3 fs-sm-3 font-bold text-center mb-lg-5">經典系列鏡框</h2>
+                <ul class="d-sm-none">
+                    <li class="d-flex align-items-lg-center mb-lg-2">
+                        <img class="col-lg-7 me-lg-2"
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-1.png"
+                            alt="product1">
+                        <h3 class="roboto-black-italic text-secondary font-bold fs-lg-5 fs-md-3 col-md-5">
+                            <img class="me-lg-2"
+                                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-diamond.svg"
+                                alt="icon-optical">
+                            OPTICAL
+                        </h3>
+                    </li>
+                    <li class="d-flex flex-row-reverse align-items-lg-center mb-lg-2">
+                        <img class="col-lg-7 ms-lg-2"
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-2.png"
+                            alt="product2">
+                        <h3 class="roboto-black-italic text-secondary font-bold fs-lg-5 fs-md-3 col-md-5">
+                            <img class="me-lg-2"
+                                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun.svg"
+                                alt="icon-sun">
+                            SUNGLASSES
+                        </h3>
+                    </li>
+                    <li class="d-flex align-items-lg-center mb-lg-2">
+                        <img class="col-lg-7 me-lg-2"
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-3.png"
+                            alt="product3">
+                        <h3 class="roboto-black-italic text-secondary font-bold fs-lg-5 fs-md-3 col-md-5">
+                            <img class="me-lg-2"
+                                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-thunder.svg"
+                                alt="icon-thunder">
+                            FUNCTIONAL
+                        </h3>
+                    </li>
+                </ul>
+                <ul class=" d-lg-none d-md-none d-sm-block">
+                    <li class="classical-bg1 d-flex align-items-sm-center justify-content-sm-center mb-sm-s">
+                        <h3 class="roboto-black-italic text-secondary font-bold fs-sm-4 text-center">
+                            <img class="w-sm-s"
+                                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-diamond.svg"
+                                alt="icon-optical">
+                            OPTICAL
+                        </h3>
+                    </li>
+                    <li class="classical-bg2  d-flex align-items-sm-center justify-content-sm-center mb-sm-s">
+                        <h3 class="roboto-black-italic text-secondary font-bold fs-sm-4 text-center">
+                            <img class="h-sm-2"
+                                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun.svg"
+                                alt="icon-sun">
+                            SUNGLASSES
+                        </h3>
+                    </li>
+                    <li class="classical-bg3  d-flex align-items-sm-center justify-content-sm-center mb-sm-s">
+                        <h3 class="roboto-black-italic text-secondary font-bold fs-sm-4 text-center">
+                            <img class="h-sm-2"
+                                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-thunder.svg"
+                                alt="icon-thunder">
+                            FUNCTIONAL
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="cross-over">
+                <div class="container pt-lg-l pb-lg-l ps-md-s pe-md-s ps-sm-s pe-sm-s">
+                    <h2 class="text-white font-bold text-center fs-lg-5 fs-md-4 fs-sm-2">聯名設計鏡框</h2>
+                    <ul
+                        class="mt-lg-5 fs-lg-7 fs-md-4 text-secondary font-bold d-flex justify-content-lg-center flex-sm-wrap">
+                        <li class="cross-over-bg1 d-flex justify-content-lg-center align-items-lg-center col-lg-6">
+                            <h3>Double A+</h3>
+                        </li>
+                        <li class="cross-over-bg2 d-flex justify-content-lg-center align-items-lg-center col-lg-6">
+                            <h3>YOUTH</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container pt-lg-l pb-lg-l pt-md-m pb-md-m pt-sm-l pb-sm-l">
+                <h2 class=" text-primary fs-lg-5 fs-md-3 fs-sm-3 font-bold text-center">顧客推薦</h2>
+
+                <ul class="d-flex flex-md-wrap justify-content-lg-center mt-lg-5">
+                    <li
+                        class="ms-lg-1 me-lg-1 ms-md-s me-md-s mb-md-m col-lg-3 col-md-6  col-sm d-flex flex-column card-recomendation">
+
+                        <img class="coustomer-recommendation border-radius-lg-top"
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-1.png"
+                            alt="coustomer-recommendation1">
+                        <div class="card-content p-lg-s p-md-s">
+                            <h3 class=" fs-lg-1 ">Jessy</h3>
+                            <p class="mt-lg-1 h-lg-m">
+                                眼鏡品質優良，下次還會想來這邊購買！
+                            </p>
+                            <p class="text-info">2021/06/20</p>
+                        </div>
+                    </li>
+                    <li
+                        class="ms-lg-1 me-lg-1 ms-md-s me-md-s mb-md-m col-lg-3 col-md-6  col-sm d-flex flex-column card-recomendation">
+
+                        <img class="coustomer-recommendation border-radius-lg-top"
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-2.png"
+                            alt="coustomer-recommendation1">
+                        <div class="card-content p-lg-s p-md-s">
+                            <h3 class=" fs-lg-1 ">凱倫</h3>
+                            <p class="mt-lg-1 h-lg-m">
+                                做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
+                            </p>
+                            <p class="text-info">2021/06/20</p>
+                        </div>
+                    </li>
+                    <li
+                        class="ms-lg-1 me-lg-1 ms-md-s me-md-s mb-md-m col-lg-3 col-md-6  col-sm d-flex flex-column card-recomendation">
+
+                        <img class="coustomer-recommendation border-radius-lg-top"
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-3.png"
+                            alt="coustomer-recommendation1">
+                        <div class="card-content p-lg-s p-md-s">
+                            <h3 class=" fs-lg-1 ">悠悠</h3>
+                            <p class="mt-lg-1 h-lg-m">
+                                謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
+                            </p>
+                            <p class="text-info">2021/06/20</p>
+                        </div>
+                    </li>
+                    <li
+                        class="ms-lg-1 me-lg-1 ms-md-s me-md-s mb-md-m col-lg-3 col-md-6 col-sm d-flex flex-column card-recomendation">
+
+                        <img class="coustomer-recommendation border-radius-lg-top"
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/rec-4.png"
+                            alt="coustomer-recommendation1">
+                        <div class="card-content  p-lg-s p-md-s">
+                            <h3 class=" fs-lg-1 ">Kyuan</h3>
+                            <p class="mt-lg-1 h-lg-m">
+                                服務很好，品質沒有任何問題，非常喜歡。
+                            </p>
+                            <p class="text-info">2021/06/20</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-info">
+                <div class="container pt-lg-l pb-lg-l">
+                    <h2 class="fs-lg-5 fs-md-3 fs-sm-3 font-bold text-center">聯絡我們</h2>
+                    <div class="col-lg-8 d-center mt-lg-2 fs-md-1">
+                        <p class="fs-lg-2">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+                        <form class="col-lg-12" action="">
+                            <label class="d-lg-block mt-lg-1" for="name">姓名</label>
+                            <input class="d-lg-block col-lg-12 p-lg-s -mt-lg-1" type="text" name="name" id="name"
+                                placeholder="陳小明">
+                            <label class="d-lg-block mt-lg-1" for="tel">聯絡電話</label>
+                            <input class="d-lg-block col-lg-12 p-lg-s -mt-lg-1" type="tel" name="tel" id="tel"
+                                placeholder="0912-345-678">
+                            <label class="d-lg-block mt-lg-1" for="email">電子郵件</label>
+                            <input class="d-lg-block col-lg-12 p-lg-s -mt-lg-1" type="email" name="email" id="email"
+                                placeholder="example@email.com">
+                            <label class="d-lg-block mt-lg-1" for="comment">意見反應</label>
+                            <input class="d-lg-block col-lg-12 p-lg-s -mt-lg-1 h-lg-s" type="textarea" name="comment"
+                                id="comment" placeholder="請輸入您的意見">
+                            <input class="mt-lg-1" type="checkbox" id="terms" name="terms">
+                            <label class="mt-lg-1" for="terms">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                            <input type="button"
+                                class="cursor-pointer btn-lg-form btn-md-form btn-sm-form col-lg-4 col-sm-6"
+                                value="確認送出">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 首頁結束 -->
+        <!-- 系列眼鏡：Optical開始 -->
+        <div class="container" v-if="optical">
+            <ul class="d-flex">
+                <li class="col-lg-4 d-flex justify-content-lg-center">
+                    <a href="#"
+                        class="col-lg-12 text-black fs-lg-4 fs-md-2 fs-sm-1 d-flex justify-content-lg-center  font-medium pt-lg-s pb-lg-s pt-sm-s pb-sm-s list-hover-lg-secondary"><span
+                            class="fs-lg-4 fs-md-2 material-icons">
+                            auto_awesome
+                        </span>
+                        OPTICAL
+                    </a>
+                </li>
+                <li class="col-lg-4 d-flex justify-content-lg-center">
+                    <a href="#"
+                        class=" col-lg-12  text-black fs-lg-4 fs-md-2 fs-sm-1 d-flex justify-content-lg-center font-medium pt-lg-s pb-lg-s pt-sm-s pb-sm-s list-hover-lg-secondary">
+                        <img class="h-lg-2 h-md-1 h-sm-1"
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun-black.svg"
+                            alt="icon-sun">
+                        SUNGLASSES
+                    </a>
+                </li>
+                <li class="col-lg-4 d-flex justify-content-lg-center">
+                    <a href="#"
+                        class="col-lg-12  text-black fs-lg-4 fs-md-2  fs-sm-1 d-flex justify-content-lg-center font-medium pt-lg-s pb-lg-s   pt-sm-s pb-sm-s list-hover-lg-secondary">
+                        <img class="h-lg-2 h-md-1 h-sm-1"
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-thunder-black.svg"
+                            alt="icon-sun">
+                        FUNCTIONAL
+                    </a>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-lg-center">
+                <img class="col-lg-6"
+                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-1.png"
+                    alt="">
+                <img class="col-lg-6"
+                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-2.png"
+                    alt="">
+            </div>
+            <div class="pt-lg-l pb-lg-l pt-sm-l pb-sm-l">
+                <h1 class="d-flex flex-column align-items-lg-center">
+                    <span class="fs-lg-5 fs-md-4 fs-sm-2">
+                        Celluloid Combi
+                    </span>
+                    <span class="fs-lg-4 fs-md-3 fs-sm-1">
+                        賽璐珞鈦金屬混合鏡框
+                    </span>
+                </h1>
+                <ul class="d-flex flex-lg-wrap mt-lg-5 justify-content-lg-evenly ps-sm-s pe-sm-s">
+                    <li class="d-flex flex-column col-lg-3 col-md-6  col-sm mb-lg-6">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt=""> 
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column col-lg-3 col-md-6 mb-lg-6 col-sm">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt="">
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt="">
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2   font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt="">
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2 font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column col-lg-3 col-md-6  col-sm mb-lg-6">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt=""> 
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column col-lg-3 col-md-6 mb-lg-6 col-sm">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt="">
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt="">
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2   font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt="">
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2 font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column col-lg-3 col-md-6  col-sm mb-lg-6">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt=""> 
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column col-lg-3 col-md-6 mb-lg-6 col-sm">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt="">
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt="">
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2   font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                            alt="">
+                        <div class="d-flex justify-content-lg-between">
+                            <p class="fs-lg-3 fs-md-2">BJ41600S</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2 font-medium">NTD 3,490</p>
+                        </div>
+                        <div class="d-flex">
+                            <a class="color-selector-dark" href="#"></a>
+                            <a class="ms-lg-1 color-selector-light" href="#"></a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="d-flex justify-content-lg-center">
+                    <li><a href="#" class="d-lg-block  btn-lg-change-page">上一頁</a></li>
+                    <li><a href="#" class="d-lg-block  btn-lg-change-page">1</a></li>
+                    <li><a href="#" class="d-lg-block  btn-lg-change-page">2</a></li>
+                    <li><a href="#" class="d-lg-block  btn-lg-change-page">3</a></li>
+                    <li><a href="#" class="d-lg-block  btn-lg-change-page">4</a></li>
+                    <li><a href="#" class="d-lg-block  btn-lg-change-page">5</a></li>
+                    <li><a href="#" class="d-lg-block  btn-lg-change-page">下一頁</a></li> 撈坑
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- 系列眼鏡：Optical結束 -->
+        <!-- 系列眼鏡：Sunglasses開始 -->
+        <!-- 系列眼鏡：Sunglasses結束 -->
+        <div class="bg-primary">
+            <!-- 表尾：桌機及平板樣式開始 -->
+            <div class="container p-lg-s p-md-s d-sm-none">
+                <nav class="d-flex justify-content-lg-between">
+                    <ul class="d-flex flex-sm-wrap col-sm align-items-lg-center">
+                        <li
+                            class="col-sm-6 border-sm-botｚｚｚｚｚｚｚｚｚｚｚｚｚｚＺtom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s border-sm-right-white">
+                            <a href="#" class=" d-md-block text-white" @click.prevent="showIndex"
+                                data-value="index">首頁</a>
+                        </li>
+                        <li
+                            class="ms-lg-5 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s">
+                            <a class=" d-md-block text-white" href="#" @click.prevent="showOptical">系列鏡框</a>
+                        </li>
+                        <li
+                            class="ms-lg-5 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s border-sm-right-white">
+                            <a class=" d-md-block text-white" href="#">門市據點</a>
+                        </li>
+                        <li
+                            class="ms-lg-5 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s">
+                            <a class=" d-md-block text-white" href="#">部落格</a>
+                        </li>
+                        <li
+                            class="ms-lg-5 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s">
+                            <a class=" d-md-block text-white" href="#">常見問題</a>
+                        </li>
+                    </ul>
+
+                    <ul class="d-flex flex-sm-wrap col-sm align-items-lg-center">
+                        <li><a href="#"><i class="fab fa-facebook text-white fs-lg-4 fs-md-2 ms-lg-5 ms-md-s"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fab fa-instagram  text-white fs-lg-4 fs-md-2 ms-lg-5 ms-md-s"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fab fa-line  text-white fs-lg-4 fs-md-2 ms-lg-5 ms-md-s"></i></a></li>
+                    </ul>
+                </nav>
+                <ul class="pt-lg-s pb-lg-s border-bottom-lg-white">
+                    <li><a class="text-white fs-lg-4 fs-md-2" href="tel:+8860800-000-000">
+                            <i class="fas fa-phone"></i>
+                            <span class="ms-lg-1">0800-000-000</span>
+                        </a>
+                    </li>
+                    <li><a class="text-white fs-lg-4 fs-md-2" href="mailto:glasses@business.com">
+                            <i class="fas fa-envelope"></i>
+                            <span class="ms-lg-1">glasses@business.com</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-lg-between text-white  mt-lg-5">
+                    <p>Copyright © 2020 Glasses.All rights reserved.</p>
+                    <ul class="d-flex">
+                        <li class="ms-lg-5 ms-md-s"><a class="text-white" href="#">隱私權政策</a></li>
+                        <li class="ms-lg-5 ms-md-s"><a class="text-white" href="#">服務條款</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 表尾：桌機及平板樣式結束 -->
+            <!-- 表尾：行動版開始 -->
+            <div class="container d-lg-none d-md-none d-sm-block p-sm-s">
+                <div class="d-flex  justify-content-sm-between pb-sm-s border-sm-bottom-white">
+                    <ul>
+                        <li><a class="text-white" href="tel:+8860800-000-000">
+                                <i class="fas fa-phone"></i>
+                                <span class="ms-lg-1">0800-000-000</span>
+                            </a>
+                        </li>
+                        <li><a class="text-white" href="mailto:glasses@business.com">
+                                <i class="fas fa-envelope"></i>
+                                <span class="ms-lg-1">glasses@business.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex">
+                        <li class="ms-sm-s"><a href="#"><i class="fab fa-facebook text-white fs-sm-3"></i></a>
+                        </li>
+                        <li class="ms-sm-s"><a href="#"><i class="fab fa-instagram  text-white fs-sm-3"></i></a>
+                        </li>
+                        <li class="ms-sm-s"><a href="#"><i class="fab fa-line  text-white fs-sm-3"></i></a></li>
+                    </ul>
+                </div>
+                <p class="text-white mt-sm-s">Copyright © 2020 Glasses.All rights reserved.</p>
+                <ul>
+                    <li class="mt-sm-s"><a class="text-white" href="#">隱私權政策</a></li>
+                    <li class="mt-sm-s"><a class="text-white" href="#">服務條款</a></li>
+                </ul>
+            </div>
+            <!-- 表尾：行動版結束-->
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="all.js"></script>
+</body>
+
+</html>
