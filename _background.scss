@@ -1,0 +1,74 @@
+
+
+
+//背景顏色設定
+
+.bg-primary{
+    background-color: $secondary;
+}
+
+.bg-secondary{
+    background-color: #FAF2F2;
+}
+.bg-info{
+    background-color: #FBF2F2;
+}
+//背景圖片結構
+.banner,.cross-over-bg1,.cross-over-bg2{
+    background-position: center;
+    background-size: cover;
+}
+.banner{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png');
+    height: 525px;
+    padding-right: 10%;
+
+}
+.cross-over{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png');
+}
+.cross-over-bg1,.cross-over-bg2{
+    height: 455px;
+}
+.cross-over-bg1{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png');
+    margin-right: 15px;
+}
+.cross-over-bg2{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-9.png');
+    margin-left: 15px;
+}
+.optical-banner-lg{
+    background-image: url();
+}
+
+@include mobile{
+        //background
+        .bg-info{
+            background-color: #AA06010D;
+        }
+        .banner{
+            background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png');
+            height: 394px;
+            padding-right: 10%;
+        }
+        .classical-bg1,.classical-bg2,.classical-bg3{        
+            background-size: cover;
+            background-position: center;
+            height: 135px;
+        }
+        .classical-bg1{
+            background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-1.png');
+        }
+        .classical-bg2{
+            background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-2.png');
+        }
+        .classical-bg3{
+            background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-3.png');
+        }
+        .cross-over-bg1,.cross-over-bg2{
+            width: 98%;
+            height: 278px;
+            margin: 5px 0;
+        }
+}

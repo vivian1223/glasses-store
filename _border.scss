@@ -1,0 +1,20 @@
+//boder-bottem
+.border-bottom-lg-white{
+    border-bottom: 1px solid #fff;
+}
+//border-radious
+
+.border-radius-lg-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@include mobile{
+     
+    .border-sm-bottom-white{
+        border-bottom: 1px solid #fff;
+    }
+    .border-sm-right-white{
+        border-right: 1px solid #fff;
+    }
+}

@@ -1,0 +1,101 @@
+//font-style
+.roboto-black-italic{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+// 字體顏色設定
+
+.text-primary{
+    color: $primary;
+}
+.text-secondary{
+    color: $secondary;
+}
+.text-info{
+    color: $info;
+}
+.text-white{
+    color: $white;
+}
+.text-black{
+    color: $black;
+}
+
+//字體設定
+
+.fs-lg-1{
+    font-size: $font-spacer * 3.5;
+}
+.fs-lg-2{
+    font-size: $font-spacer * 5;
+}
+.fs-lg-3{
+    font-size: $font-spacer * 6;
+}
+.fs-lg-4{
+    font-size: $font-spacer * 9;
+}
+.fs-lg-5{
+    font-size: $font-spacer * 12;
+}
+.fs-lg-6{
+    font-size: $font-spacer * 16;
+}
+.fs-lg-7{
+    font-size: $font-spacer * 18;
+}
+//font-weight
+.font-bold{
+    font-weight: bold;
+}
+.font-medium{
+    font-weight: 500;
+}
+//hover
+.list-hover-lg-secondary{
+    border-bottom: 8px solid  transparent;
+}
+.list-hover-lg-secondary:hover{
+    border-bottom: 8px solid  #AA0601;
+}
+
+@include tablet{
+    //font-size
+    .fs-md-1{
+        font-size: $font-spacer * 3.5;
+    }
+    .fs-md-5{
+        font-size: $font-spacer * 12;
+    }
+    .fs-md-4{
+        font-size: $font-spacer * 8;
+    }
+    .fs-md-3{
+        font-size: $font-spacer * 6;
+    }
+    .fs-md-2{
+        font-size: $font-spacer * 5;
+    }
+}
+
+@include mobile{
+
+    //font
+
+    .fs-sm-1{
+        font-size: $font-spacer * 3.5;
+    }
+    .fs-sm-2{
+        font-size: $font-spacer * 5;
+    }
+    .fs-sm-3{
+        font-size: $font-spacer * 6;
+    }
+    .fs-sm-4{
+        font-size: $font-spacer * 7;
+    }
+    .fs-sm-5{
+        font-size: $font-spacer * 8;
+    }
+}
