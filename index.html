@@ -335,150 +335,19 @@
                     </span>
                 </h1>
                 <ul class="d-flex flex-lg-wrap mt-lg-5 justify-content-lg-evenly ps-sm-s pe-sm-s">
-                    <li class="d-flex flex-column col-lg-3 col-md-6  col-sm mb-lg-6">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                    <li class="d-flex flex-column col-lg-3 col-md-6  col-sm mb-lg-6" v-for="product in products">
+                        <img :src="product.imageUrl"
                             alt=""> 
                         <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
+                            <p class="fs-lg-3 fs-md-2 ">{{product.id}}</p>
+                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD {{product.price}}</p>
                         </div>
                         <div class="d-flex">
                             <a class="color-selector-dark" href="#"></a>
                             <a class="ms-lg-1 color-selector-light" href="#"></a>
                         </div>
                     </li>
-                    <li class="d-flex flex-column col-lg-3 col-md-6 mb-lg-6 col-sm">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                            alt="">
-                        <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
-                        </div>
-                        <div class="d-flex">
-                            <a class="color-selector-dark" href="#"></a>
-                            <a class="ms-lg-1 color-selector-light" href="#"></a>
-                        </div>
-                    </li>
-                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                            alt="">
-                        <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2   font-medium">NTD 3,490</p>
-                        </div>
-                        <div class="d-flex">
-                            <a class="color-selector-dark" href="#"></a>
-                            <a class="ms-lg-1 color-selector-light" href="#"></a>
-                        </div>
-                    </li>
-                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                            alt="">
-                        <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2 font-medium">NTD 3,490</p>
-                        </div>
-                        <div class="d-flex">
-                            <a class="color-selector-dark" href="#"></a>
-                            <a class="ms-lg-1 color-selector-light" href="#"></a>
-                        </div>
-                    </li>
-                    <li class="d-flex flex-column col-lg-3 col-md-6  col-sm mb-lg-6">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                            alt=""> 
-                        <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
-                        </div>
-                        <div class="d-flex">
-                            <a class="color-selector-dark" href="#"></a>
-                            <a class="ms-lg-1 color-selector-light" href="#"></a>
-                        </div>
-                    </li>
-                    <li class="d-flex flex-column col-lg-3 col-md-6 mb-lg-6 col-sm">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                            alt="">
-                        <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
-                        </div>
-                        <div class="d-flex">
-                            <a class="color-selector-dark" href="#"></a>
-                            <a class="ms-lg-1 color-selector-light" href="#"></a>
-                        </div>
-                    </li>
-                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                            alt="">
-                        <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2   font-medium">NTD 3,490</p>
-                        </div>
-                        <div class="d-flex">
-                            <a class="color-selector-dark" href="#"></a>
-                            <a class="ms-lg-1 color-selector-light" href="#"></a>
-                        </div>
-                    </li>
-                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                            alt="">
-                        <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2 font-medium">NTD 3,490</p>
-                        </div>
-                        <div class="d-flex">
-                            <a class="color-selector-dark" href="#"></a>
-                            <a class="ms-lg-1 color-selector-light" href="#"></a>
-                        </div>
-                    </li>
-                    <li class="d-flex flex-column col-lg-3 col-md-6  col-sm mb-lg-6">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                            alt=""> 
-                        <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
-                        </div>
-                        <div class="d-flex">
-                            <a class="color-selector-dark" href="#"></a>
-                            <a class="ms-lg-1 color-selector-light" href="#"></a>
-                        </div>
-                    </li>
-                    <li class="d-flex flex-column col-lg-3 col-md-6 mb-lg-6 col-sm">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                            alt="">
-                        <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
-                        </div>
-                        <div class="d-flex">
-                            <a class="color-selector-dark" href="#"></a>
-                            <a class="ms-lg-1 color-selector-light" href="#"></a>
-                        </div>
-                    </li>
-                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                            alt="">
-                        <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2   font-medium">NTD 3,490</p>
-                        </div>
-                        <div class="d-flex">
-                            <a class="color-selector-dark" href="#"></a>
-                            <a class="ms-lg-1 color-selector-light" href="#"></a>
-                        </div>
-                    </li>
-                    <li class="d-flex flex-column col-lg-3  col-md-6 mb-lg-6 col-sm">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                            alt="">
-                        <div class="d-flex justify-content-lg-between">
-                            <p class="fs-lg-3 fs-md-2">BJ41600S</p>
-                            <p class="text-secondary fs-lg-3 fs-md-2 font-medium">NTD 3,490</p>
-                        </div>
-                        <div class="d-flex">
-                            <a class="color-selector-dark" href="#"></a>
-                            <a class="ms-lg-1 color-selector-light" href="#"></a>
-                        </div>
-                    </li>
+                    
                 </ul>
                 <ul class="d-flex justify-content-lg-center">
                     <li><a href="#" class="d-lg-block  btn-lg-change-page">上一頁</a></li>
@@ -543,78 +412,19 @@
                 </span>
             </h1>
             <ul class="d-flex flex-lg-wrap mt-lg-5 justify-content-lg-evenly ps-sm-s pe-sm-s">
-                <li class="d-flex flex-column col-lg-4 col-md-6  col-sm mb-lg-6 p-lg-s">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
+                <li class="d-flex flex-column col-lg-4 col-md-6  col-sm mb-lg-6 p-lg-s" v-for="sunglasses in sunglassesList">
+                    <img :src="sunglasses.imageUrl"
                         alt=""> 
                     <div class="d-flex justify-content-lg-between">
-                        <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                        <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
+                        <p class="fs-lg-3 fs-md-2 ">{{sunglasses.id}}</p>
+                        <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD {{sunglasses.price}}</p>
                     </div>
                     <div class="d-flex">
                         <a class="color-selector-dark" href="#"></a>
                         <a class="ms-lg-1 color-selector-light" href="#"></a>
                     </div>
                 </li>
-                <li class="d-flex flex-column col-lg-4 col-md-6  col-sm mb-lg-6 p-lg-s">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                        alt=""> 
-                    <div class="d-flex justify-content-lg-between">
-                        <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                        <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
-                    </div>
-                    <div class="d-flex">
-                        <a class="color-selector-dark" href="#"></a>
-                        <a class="ms-lg-1 color-selector-light" href="#"></a>
-                    </div>
-                </li>
-                <li class="d-flex flex-column col-lg-4 col-md-6  col-sm mb-lg-6 p-lg-s">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                        alt=""> 
-                    <div class="d-flex justify-content-lg-between">
-                        <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                        <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
-                    </div>
-                    <div class="d-flex">
-                        <a class="color-selector-dark" href="#"></a>
-                        <a class="ms-lg-1 color-selector-light" href="#"></a>
-                    </div>
-                </li>
-                <li class="d-flex flex-column col-lg-4 col-md-6  col-sm mb-lg-6 p-lg-s">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                        alt=""> 
-                    <div class="d-flex justify-content-lg-between">
-                        <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                        <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
-                    </div>
-                    <div class="d-flex">
-                        <a class="color-selector-dark" href="#"></a>
-                        <a class="ms-lg-1 color-selector-light" href="#"></a>
-                    </div>
-                </li>
-                <li class="d-flex flex-column col-lg-4 col-md-6  col-sm mb-lg-6 p-lg-s">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                        alt=""> 
-                    <div class="d-flex justify-content-lg-between">
-                        <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                        <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
-                    </div>
-                    <div class="d-flex">
-                        <a class="color-selector-dark" href="#"></a>
-                        <a class="ms-lg-1 color-selector-light" href="#"></a>
-                    </div>
-                </li>
-                <li class="d-flex flex-column col-lg-4 col-md-6  col-sm mb-lg-6 p-lg-s">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png"
-                        alt=""> 
-                    <div class="d-flex justify-content-lg-between">
-                        <p class="fs-lg-3 fs-md-2 ">BJ41600S</p>
-                        <p class="text-secondary fs-lg-3 fs-md-2  font-medium">NTD 3,490</p>
-                    </div>
-                    <div class="d-flex">
-                        <a class="color-selector-dark" href="#"></a>
-                        <a class="ms-lg-1 color-selector-light" href="#"></a>
-                    </div>
-                </li>
+
             </ul>
             <ul class="d-flex justify-content-lg-center">
                 <li><a href="#" class="d-lg-block  btn-lg-change-page">上一頁</a></li>
@@ -627,8 +437,13 @@
             </ul>
         </div>
         </div>
-        
         <!-- 系列眼鏡：Sunglasses結束 -->
+        <!-- 門市據點開始 -->
+        <!-- 門市據點結束 -->
+        <!-- 部落格開始 -->
+        <!-- 部落格結束 -->
+        <!-- 常見問題開始 -->
+        <!-- 常見問題結束 -->
         <div class="bg-primary">
             <!-- 表尾：桌機及平板樣式開始 -->
             <div class="container p-lg-s p-md-s d-sm-none">
