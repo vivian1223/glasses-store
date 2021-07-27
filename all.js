@@ -5,6 +5,7 @@ const app = {
         optical:false,
         sunglasses: false,
         store:false,
+        faq:false,
         products:[
             {
                 imageUrl:"https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/products-1.png",
@@ -157,21 +158,36 @@ const app = {
             this.optical = false;
             this.sunglasses = false;
             this.store = false;
+            this.faq = false;
+            location.hash = 'index';
         },
         showOptical(){
             this.optical = true
             this.index = false;
             this.sunglasses = false;
             this.store = false;
+            this.faq = false;
+            location.hash = 'optical';
         },
         showSunglasses(){
             this.sunglasses = true;
             this.index = false;
             this.optical = false;
             this.store = false;
+            this.faq = false;
+            location.hash = 'sunglasses';
         },
         showStore(){
             this.store = true;
+            this.sunglasses = false;
+            this.index = false;
+            this.optical = false;
+            this.faq = false;
+            location.hash = 'store';
+        },
+        showFaq(){
+            this.faq = true;
+            this.store = false;
             this.sunglasses = false;
             this.index = false;
             this.optical = false

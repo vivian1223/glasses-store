@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="all.css">
-    <title>Document</title>
+    <title>眼鏡眼鏡</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         <div class="bg-primary">
             <nav
                 class=" ps-lg-l pe-lg-l pt-lg-s pb-lg-s ps-md-m pe-md-m pt-md-s pb-md-s p-sm-none d-flex justify-content-lg-between align-items-md-center justify-content-center flex-sm-wrap border-sm-bottom-white">
-                <a href="#" @click="showIndex"
+                <a href="#index" @click="showIndex"
                     class="col-sm d-sm-flex d-md-block justify-content-sm-center border-sm-bottom-white  pt-sm-s pb-sm-s">
                     <img class="w-sm-m"
                         src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png"
@@ -32,11 +32,11 @@
                 <ul class="d-flex flex-sm-wrap col-sm align-items-lg-center">
                     <li
                         class="ms-lg-6 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s border-sm-right-white">
-                        <a href="#" class=" d-md-block text-white" @click.prevent="showOptical">系列鏡框</a>
+                        <a href="#optical" class=" d-md-block text-white" @click.prevent="showOptical">系列鏡框</a>
                     </li>
                     <li
                         class="ms-lg-6 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s">
-                        <a class=" d-md-block text-white" href="#" @click.prevent="showStore">門市據點</a>
+                        <a class=" d-md-block text-white" href="#store" @click.prevent="showStore">門市據點</a>
                     </li>
                     <li
                         class="ms-lg-6 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s border-sm-right-white">
@@ -299,7 +299,7 @@
                     </a>
                 </li>
                 <li class="col-lg-4 d-flex justify-content-lg-center">
-                    <a @click.prevent="showSunglasses" href="#"
+                    <a @click.prevent="showSunglasses" href="#sunglasses"
                         class=" col-lg-12  text-black fs-lg-4 fs-md-2 fs-sm-1 d-flex justify-content-lg-center font-medium pt-lg-s pb-lg-s pt-sm-s pb-sm-s list-hover-lg-secondary">
                         <img class="h-lg-2 h-md-1 h-sm-1"
                             src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun-black.svg"
@@ -376,7 +376,7 @@
                 </a>
             </li>
             <li class="col-lg-4 d-flex justify-content-lg-center">
-                <a @click.prevent="showSunglasses" href="#"
+                <a @click.prevent="showSunglasses" href="#sunglasses"
                     class=" col-lg-12  text-black fs-lg-4 fs-md-2 fs-sm-1 d-flex justify-content-lg-center font-medium pt-lg-s pb-lg-s pt-sm-s pb-sm-s list-hover-lg-secondary">
                     <img class="h-lg-2 h-md-1 h-sm-1"
                         src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-sun-black.svg"
@@ -474,6 +474,9 @@
         <!-- 部落格開始 -->
         <!-- 部落格結束 -->
         <!-- 常見問題開始 -->
+        <div class="container" v-if="showFaq">
+
+        </div>
         <!-- 常見問題結束 -->
         <div class="bg-primary">
             <!-- 表尾：桌機及平板樣式開始 -->
@@ -482,16 +485,16 @@
                     <ul class="d-flex flex-sm-wrap col-sm align-items-lg-center">
                         <li
                             class="col-sm-6 border-sm-bot border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s border-sm-right-white">
-                            <a href="#" class=" d-md-block text-white" @click.prevent="showIndex"
+                            <a href="#index" class=" d-md-block text-white" @click.prevent="showIndex"
                                 data-value="index">首頁</a>
                         </li>
                         <li
                             class="ms-lg-5 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s">
-                            <a class=" d-md-block text-white" href="#" @click.prevent="showOptical">系列鏡框</a>
+                            <a class=" d-md-block text-white" href="#optical" @click.prevent="showOptical">系列鏡框</a>
                         </li>
                         <li
                             class="ms-lg-5 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s border-sm-right-white">
-                            <a class=" d-md-block text-white" href="#" @click.prevent="showStore">門市據點</a>
+                            <a class=" d-md-block text-white" href="#store" @click.prevent="showStore">門市據點</a>
                         </li>
                         <li
                             class="ms-lg-5 ms-md-s ms-sm-none col-sm-6 border-sm-bottom-white d-sm-flex justify-content-sm-center pt-sm-s pb-sm-s">
