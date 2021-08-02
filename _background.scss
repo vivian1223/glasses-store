@@ -29,6 +29,8 @@
 }
 .cross-over-bg1,.cross-over-bg2{
     height: 455px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: overlay;
 }
 .cross-over-bg1{
     background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/product-8.png');
