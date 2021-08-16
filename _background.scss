@@ -22,10 +22,11 @@
     background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png');
     height: 525px;
     padding-right: 10%;
-
+    background-attachment: fixed;
 }
 .cross-over{
     background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png');
+    background-attachment: fixed;
 }
 .cross-over-bg1,.cross-over-bg2{
     height: 455px;

@@ -1,3 +1,4 @@
+
 const app = {
     data() {
         return {
@@ -192,7 +193,10 @@ const app = {
             this.index = false;
             this.optical = false
         }
-    }
+    },
+    mounted() {
+        AOS.init();
+    },
 }
 
 Vue.createApp(app).mount('#app')
